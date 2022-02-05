@@ -1,0 +1,42 @@
+@import "./variables";
+.about {
+    background-color: white;
+    color: $primary-solid;
+    position: relative;
+    z-index: -1;
+    padding-bottom: 11rem;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1142px;
+    margin-inline: auto;
+    margin-top: 2rem;
+}
+
+.about-image {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5rem 0 0 5rem;
+}
+
+.about-image-container {
+    flex: 2;
+}
+
+.about-me {
+    padding-left: 2rem;
+    flex: 4;
+    align-self: flex-start;
+}
+
+@media (max-width: 45em) {
+    .about-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about-image {
+        border-radius: 0;
+        max-width: 70vw;
+    }
+}

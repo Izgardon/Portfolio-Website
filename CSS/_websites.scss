@@ -1,0 +1,66 @@
+@import "./variables";
+.websites {
+    color: $primary-solid;
+    margin-top: 4rem;
+}
+
+.website-container {
+    padding-top: 3rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+    position: relative;
+}
+
+.website-item {
+    background-color: $primary-faded;
+    height: 450px;
+    flex: 1;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.website-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.website-content {
+    position: relative;
+    display: block;
+    margin: 1rem;
+    top: 50%;
+    flex: 0.43;
+    background: white;
+    border-radius: 1rem;
+    padding: 0.75rem;
+}
+
+//-------------Media queries
+@media (min-width: 72rem) {
+    .website-item {
+        transition: transform 0.2s ease-out;
+    }
+    .website-item:hover {
+        transform: translateY(-2rem);
+    }
+}
+
+@media (max-width:72rem) {
+    .website-container {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .website-item {
+        flex: auto;
+        width: 80%;
+        max-width: 30rem;
+        margin-bottom: 2rem;
+    }
+}

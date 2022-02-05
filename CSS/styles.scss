@@ -1,0 +1,116 @@
+@import "./nav",
+"./background",
+"./about",
+"./variables",
+"./projects",
+"./websites",
+"./contact";
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: $sectionTitle;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: $h3title;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-spacing {
+    margin-top: 1rem;
+    width: 100%;
+    height: 10vw;
+    background-color: $primary-solid;
+}
+
+
+/* .heading-container {
+    font-weight: 600;
+    font-size: 2rem;
+    overflow: hidden;
+    height: 45px;
+    padding: 0 150px 0 50px;
+    margin-left: 8vw;
+    text-shadow: 1px 1px black;
+    top: -2vw;
+    position: relative;
+}
+
+.heading-container::before {
+    content: '[';
+    left: 0;
+}
+
+.heading-container::after {
+    content: ']';
+    right: 100px;
+}
+
+.heading-container::before,
+.heading-container::after {
+    position: absolute;
+    top: 0;
+    color: $primary-faded;
+    font-size: 42px;
+    line-height: 40px;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.heading-text {
+    display: block;
+    float: left;
+    overflow: visible;
+    height: 90px;
+}
+
+.heading-list {
+    padding-left: 300px;
+    text-align: left;
+    list-style: none;
+    white-space: nowrap;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.heading-list-item {
+    line-height: 40px;
+} 
+
+
+
+
+<?=$ invalid_class_name ?? "" ?>
+
+
+
+*/
