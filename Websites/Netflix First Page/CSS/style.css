@@ -1,0 +1,149 @@
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, hsl(0 0% 8%) 0 90%, rgb(7, 6, 6));
+    background-repeat: no-repeat;
+    background-color: hsl(0 0% 8%);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(92, 86, 86);
+}
+
+header {
+    margin-top: 1rem;
+}
+
+
+/* Logo */
+
+.sessions {
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+    color: red;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 4vw;
+    transition: 400ms;
+}
+
+
+/* Center formatting */
+
+.manage-profiles {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.3rem 1rem;
+    border: solid 1px rgb(71, 67, 67);
+}
+
+.header {
+    color: rgb(224, 224, 224);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 3.5vw;
+}
+
+.profiles {
+    text-align: center;
+}
+
+.profile-image img {
+    border-radius: 10px;
+    min-width: 84px;
+    width: 100%;
+}
+
+.profile-image {
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: 400ms;
+}
+
+.profile-name {
+    font-size: 100%;
+    margin-top: 0.4rem;
+}
+
+
+/* Center display */
+
+.display {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 8rem auto 0 auto;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    justify-content: center;
+    width: 75%;
+    max-width: 800px;
+    position: relative;
+}
+
+.profile {
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+    width: 18%;
+    min-width: 94px;
+    /* box-shadow: 0 0 10px 10px rgb(255, 0, 0); */
+}
+
+.profile:first-of-type {
+    margin-left: 0;
+}
+
+
+/* Transforms and transitions */
+
+.sessions:hover {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.profile-image::after {
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 5px;
+    opacity: 0;
+}
+
+.profile:hover .profile-image::after {
+    opacity: 1;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.manage-profiles:hover {
+    color: rgb(173, 173, 173);
+    border: solid 1px rgb(173, 173, 173);
+}
+
+.profile:hover .profile-name {
+    color: rgb(173, 173, 173);
+}

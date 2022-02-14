@@ -11,6 +11,7 @@
     .header-images {
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
@@ -90,6 +91,14 @@
         line-height: 40px;
     }
     
+    .heading-about {
+        position: relative;
+        bottom: 5vh;
+        text-align: center;
+        text-shadow: 1px 1px black;
+        font-weight: 500;
+    }
+    
     @keyframes opacity {
         0%,
         100% {
@@ -139,5 +148,10 @@
             white-space: normal;
             height: 100px;
             text-align: center;
+        }
+        .heading-about {
+            margin-top: 2rem;
+            max-width: 80%;
+            margin-inline: auto;
         }
     }

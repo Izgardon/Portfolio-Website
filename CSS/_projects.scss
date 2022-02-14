@@ -1,6 +1,7 @@
+@import "./variables";
 .projects {
     position: relative;
-    background: linear-gradient(to left, rgb(248, 55, 0), rgb(249, 207, 34));
+    background: linear-gradient(to left, rgb(248, 55, 0), darken(rgb(249, 207, 34), 15%));
     height: auto;
     width: 100%;
     padding: 0 0;
@@ -15,7 +16,7 @@
     bottom: -75px;
     transform: skewY(-4deg);
     z-index: -1;
-    background: linear-gradient(to left, rgb(248, 55, 0), rgb(249, 207, 34));
+    background: linear-gradient(to left, rgb(248, 55, 0), darken(rgb(249, 207, 34), 15%));
 }
 
 .projects::before {
@@ -25,7 +26,7 @@
     height: 150px;
     top: -75px;
     z-index: -1;
-    background: linear-gradient(to left, rgb(248, 55, 0), rgb(249, 207, 34));
+    background: linear-gradient(to left, rgb(248, 55, 0), darken(rgb(249, 207, 34), 15%));
     transform: skewY(-4deg);
 }
 
@@ -63,6 +64,9 @@
 //media Queries
 //Subtitle underline on large screens
 @media (min-width:55em) {
+    .grid-text>p {
+        font-size: 1.125rem;
+    }
     .right,
     .right+p {
         text-align: right;

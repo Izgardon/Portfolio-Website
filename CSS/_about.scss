@@ -21,13 +21,15 @@
 }
 
 .about-image-container {
-    flex: 2;
+    flex: 1;
 }
 
 .about-me {
     padding-left: 2rem;
-    flex: 4;
+    flex: 2;
     align-self: flex-start;
+    font-weight: 500;
+    font-size: clamp(0.75rem, 1.25vw, 1.1rem);
 }
 
 @media (max-width: 45em) {

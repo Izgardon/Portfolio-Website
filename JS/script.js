@@ -11,7 +11,7 @@ const home = document.querySelector("#home")
 
 const wrapper = document.querySelector(".wrapper")
 
-const mainHeading = document.querySelector(".heading-container")
+const mainHeading = document.querySelector(".heading-fade")
 
 const logo = document.querySelector(".logo")
 
@@ -39,9 +39,11 @@ function toggle() {
     if (visible === "false") {
         navItems.setAttribute("data-visible", "true")
         navButton.setAttribute("data-open", "true")
+        navButton.setAttribute("aria-expanded", "true")
     } else if (visible === "true") {
         navItems.setAttribute("data-visible", "false")
         navButton.setAttribute("data-open", "false")
+        navButton.setAttribute("aria-expanded", "false")
     }
 
 

@@ -1,0 +1,164 @@
+*,*::before,*::after {
+
+    box-sizing: border-box;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+html {
+    overflow:hidden;
+}
+
+
+body{
+    margin: 0;
+    background-color: black;
+}
+    
+
+
+@media (max-width: 800px){
+    body {
+        background-position: center left;
+    }
+
+    .navigation {
+        margin-left: 7rem;
+
+    }
+}
+
+/* Utility Classes */
+
+.flex {
+    display:flex;
+    gap:2rem;
+    justify-content: center;
+    width:100%;
+    
+    
+    
+}
+
+
+/* Header */
+
+header {
+    
+    margin-top: 1rem;
+    margin-left: 2rem;
+
+}
+
+.logo{
+    min-width: 5rem;
+    width:8vw;
+    max-width: 6rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    position: absolute;
+    top: 1rem;
+    left: 10vmin;
+    
+      
+
+    
+
+
+}
+
+.logo::before {
+    
+    content:"";
+    background: url(../images/logo.jpg);
+    position: absolute;
+    width:100%;
+    height:100%;
+    border-radius:100%;
+    background-repeat: no-repeat;
+    background-size:135%;
+    background-position: center;
+    background-color:white;
+   
+    
+
+
+
+}
+
+.logo::after {
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background-color:rgb(26, 26, 26);
+    bottom:0;
+    left:-50%;
+    border-radius: 35%;
+    padding:10px;
+    animation: waves 5s ease-in 1s;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes waves {
+    to{
+        transform: translateY(-50%) rotate(540deg);
+
+    }
+    
+}
+
+
+.navigation {
+
+    list-style: none;
+    padding:0;
+    width:100%;
+    
+    
+    
+
+    
+}
+
+.navigation *{
+    text-decoration: none;
+    color:rgb(255, 240, 240);
+    
+}
+
+
+/* Trying effects */
+
+
+.container {
+    display:block;
+    width:100%;
+    position:relative;
+    text-align: center;
+    top: 18rem;
+    color:white;
+    font-size: 5rem;
+}
+
+.roll {
+    display:inline-block;
+    animation: roll 2s ease-in 1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+
+}
+
+@keyframes roll{
+
+    from{
+        opacity:0;
+        transform:translatey(-70%);
+    }
+    to {
+        opacity:1;
+    }
+}
