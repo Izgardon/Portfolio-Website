@@ -127,14 +127,18 @@
                                 and creating novel solutions. It also allowed me to have some fun with SCSS. You can click on this <a href="./Projects/Game/index.html">link</a> to try it yourself. Code can be found on my GitHub</p>
                         </div>
                         <div>
-                            <img src="../Images/project1.png " class="grid-image "></div>
+                            <a href="./Projects/Game/index.html">
+                                <img src="../Images/project1.png " class="grid-image "></a>
+                        </div>
 
 
-                        <div><img src="../Images/mountain.png " class="grid-image ">
+                        <div>
+                            <a href="./Projects/Recipe Website/index.html"><img src="../Images/forkify.jpg " class="grid-image "></a>
                         </div>
                         <div class="grid-text ">
-                            <h3 class="right ">Javascript Project 2</h3>
-                            <p>My Second project
+                            <h3 class="right ">Recipe Finder Website</h3>
+                            <p>This project was created through a course I undertook and taught me an incredible amount.<br> I used an MVC design pattern for the architecture which showed me a very concise method of controlling data flow and user interaction.
+                                I learned how to implement APIs, then parse and then display data from them. I also used local storage to save bookmarks. Click this <a href="./Projects/Recipe Website/index.html">link </a>here to try it out!
                                 <p>
                         </div>
                     </div>
@@ -151,20 +155,21 @@
                                 <p class="website-paragraph ">This was my first project and I decided to create something simple while focusing on making it mobile friendly as well.</p>
                             </div>
                         </article>
-                        <article class="website-item ">
+                        <article class="website-item"><img src="../Images/website2.png" onclick="location.href='./Websites/Nicola/index.html'">
                             <div class="website-content ">
-                                <h3>Website 2
+                                <h3>TTT Copywriting
                                 </h3>
-                                <p class="website-paragraph "></p>
+                                <p class="website-paragraph">This project was for a client who needed a website shell made. I designed and created it using HTML, SCSS and some JavaScritpt. It has 4 pages which taught me a lot about using helper classes and designs that are used throughout
+                                    the site.</p>
                             </div>
                         </article>
-                        <article class="website-item ">
+                        <!-- <article class="website-item ">
                             <div class="website-content ">
                                 <h3>Website 3
                                 </h3>
                                 <p class="website-paragraph "></p>
                             </div>
-                        </article>
+                        </article> -->
                     </div>
 
                 </section>
