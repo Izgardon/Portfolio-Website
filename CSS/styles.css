@@ -437,10 +437,10 @@
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-weight: 500;
-  font-size: clamp(0.75rem, 1.25vw, 1.1rem);
+  font-size: 1rem;
 }
 
-@media (max-width: 45em) {
+@media (max-width: 48em) {
   .about-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -654,9 +654,6 @@
   display: block;
   margin: 1rem;
   top: 50%;
-  -webkit-box-flex: 0.43;
-      -ms-flex: 0.43;
-          flex: 0.43;
   background: white;
   border-radius: 1rem;
   padding: 1rem 1.5rem;
@@ -693,6 +690,9 @@
             flex: auto;
     width: 80%;
     max-width: 30rem;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
     margin-bottom: 6rem;
   }
   .website-content {
@@ -706,6 +706,15 @@
     background: white;
     border-radius: 1rem;
     padding: 0.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 35rem) {
+  .website-content {
+    overflow-y: scroll;
+  }
+  .website-item {
+    height: 350px;
   }
 }
 
@@ -764,6 +773,23 @@
   color: white;
   font-size: 1.25rem;
   font-weight: 400;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contact-form button:hover {
+  -webkit-box-shadow: 1px 1px 5px orange;
+          box-shadow: 1px 1px 5px orange;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 72rem) {
+  .contact-me {
+    margin-top: -10rem;
+  }
 }
 
 *,

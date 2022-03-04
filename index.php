@@ -106,7 +106,7 @@
 
 
                             <br><br> SCSS is my preferred preprocessor and I have a lot of experience using JavaScript although I am now in the process of learning React. I also have some knowledge of Bootstrap, PHP and Python and can pick them up quickly.
-                            Additionally, I am comfortable using Git version control.
+                            Additionally, I am comfortable using Git version control. All the code for my projects including this website can be found on my <a href="https://github.com/Izgardon">GitHub.</a>
 
                             <br><br>While not working I enjoy camping, hiking and, although I lack any innate ability, I also love to snowboard. If I'm not in proximity to a mountain, I like to play video games, D&D and padel tennis.
 

@@ -37,7 +37,6 @@
     display: block;
     margin: 1rem;
     top: 50%;
-    flex: 0.43;
     background: white;
     border-radius: 1rem;
     padding: 1rem 1.5rem;
@@ -66,6 +65,7 @@
         flex: auto;
         width: 80%;
         max-width: 30rem;
+        min-width: fit-content;
         margin-bottom: 6rem;
     }
     .website-content {
@@ -77,5 +77,14 @@
         background: white;
         border-radius: 1rem;
         padding: 0.5rem 0.5rem;
+    }
+}
+
+@media (max-width:35rem) {
+    .website-content {
+        overflow-y: scroll;
+    }
+    .website-item {
+        height: 350px;
     }
 }
