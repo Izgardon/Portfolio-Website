@@ -47,6 +47,7 @@ h3 {
 
 .no-select {
   user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 .no-select:focus {

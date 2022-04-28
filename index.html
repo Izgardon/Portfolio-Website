@@ -47,7 +47,7 @@
         <div class="nav-background"></div>
         <div class="logo">WS</div>
         <button
-          class="mobile-nav-button"
+          class="mobile-nav-button no-select"
           aria-controls="nav-items"
           aria-expanded="false"
           data-open="false"
@@ -150,9 +150,13 @@
               </div>
             </div>
           </div>
-          <button class="slider__btn slider__btn--left">&larr;</button>
-          <button class="slider__btn slider__btn--right">&rarr;</button>
-          <div class="dots"></div>
+          <button class="slider__btn slider__btn--left no-select">
+            &larr;
+          </button>
+          <button class="slider__btn slider__btn--right no-select">
+            &rarr;
+          </button>
+          <div class="dots no-select"></div>
         </section>
         <section class="projects" id="projects">
           <h2>Projects</h2>
@@ -173,13 +177,19 @@
             </div>
             <div>
               <a href="./Projects/Game/index.html">
-                <img src="../Images/project1.png " class="grid-image"
+                <img
+                  src="../Images/project1.png "
+                  alt="Screenshot of game app"
+                  class="grid-image"
               /></a>
             </div>
 
             <div>
               <a href="./Projects/Recipe Website/index.html"
-                ><img src="../Images/forkify.jpg " class="grid-image"
+                ><img
+                  src="../Images/forkify.jpg "
+                  alt="Screenshot of Recipe app"
+                  class="grid-image"
               /></a>
             </div>
             <div class="grid-text">
@@ -211,7 +221,10 @@
             </div>
             <div>
               <a href="./Projects/Bank Website/">
-                <img src="../Images/project3.png " class="grid-image"
+                <img
+                  src="../Images/project3.png "
+                  alt="Screenshot of bank app"
+                  class="grid-image"
               /></a>
             </div>
           </div>
