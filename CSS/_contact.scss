@@ -1,61 +1,60 @@
 @import "./variables";
 .contact-me {
-    margin-top: -6rem;
-    color: $primary-solid;
+  margin-top: -6rem;
+  color: $primary-solid;
 }
 
 .contact-container {
-    width: 80%;
-    max-width: 1142px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    margin-inline: auto;
-    padding: 2rem 4vw;
-    background: $primary-solid;
-    color: white;
-    border-radius: 10px;
+  width: 80%;
+  max-width: 1142px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-inline: auto;
+  padding: 2rem 4vw;
+  background: $primary-solid;
+  color: white;
+  border-radius: 10px;
 }
 
 .contact-form {
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form input,
 .contact-form textarea {
-    display: block;
-    border: 0;
-    margin-top: 1rem;
-    border-radius: 20px;
-    padding: 15px;
-    outline: none;
+  display: block;
+  border: 0;
+  margin-top: 1rem;
+  border-radius: 20px;
+  padding: 15px;
+  outline: none;
 }
 
 .contact-form button {
-    margin: 2rem auto 0 auto;
-    padding: 0.5rem;
-    background: linear-gradient(to left, rgb(248, 55, 0), rgb(249, 207, 34));
-    ;
-    border: 0;
-    cursor: pointer;
-    border-radius: 20px;
-    width: 8rem;
-    color: white;
-    font-size: 1.25rem;
-    font-weight: 400;
-    transform: scale(1, 1);
-    transition: all 0.3s linear;
+  margin: 2rem auto 0 auto;
+  padding: 0.5rem;
+  background: linear-gradient(to left, rgb(248, 55, 0), rgb(249, 207, 34));
+  border: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 8rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 400;
+  transform: scale(1, 1);
+  transition: all 0.3s linear;
 }
 
 .contact-form button:hover {
-    box-shadow: 1px 1px 5px orange;
-    transform: scale(1.05, 1.05);
+  box-shadow: 1px 1px orange;
+  transform: scale(1.02, 1.02);
 }
 
-@media (max-width:72rem) {
-    .contact-me {
-        margin-top: -10rem;
-    }
+@media (max-width: 72rem) {
+  .contact-me {
+    margin-top: -10rem;
+  }
 }
