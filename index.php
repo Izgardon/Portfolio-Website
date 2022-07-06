@@ -9,7 +9,7 @@
             $mailFrom = $_POST['email'];
             $message = $_POST['message'];
             $subject = "Web Dev Inquiry";
-            $mailTo = "wsessions@hotmail.co.uk";
+            $mailTo = "williamsessions23@gmail.com";
             $headers = "From: ".$mailFrom;
             $txt = "You have recieved an e-mail from  ".$name.".\n\n ".$message." from ".$mailFrom;
 
@@ -63,10 +63,10 @@
               <a href="#about" class="nav-item">About</a>
             </li>
             <li>
-              <a href="#projects" class="nav-item">Projects</a>
+              <a href="#projects" class="nav-item">JavaScript Projects</a>
             </li>
             <li>
-              <a href="#websites" class="nav-item">Websites</a>
+              <a href="#websites" class="nav-item">Fullstack Projects</a>
             </li>
             <li>
               <a href="#contact-me" class="nav-item">Contact</a>
@@ -107,7 +107,7 @@
             <div class="slide slide-1 flex">
               <div class="slide-image-container">
                 <img
-                  src="../Images/me.jpg"
+                  src="../Images/snowboarding.jpg"
                   alt="Picture of me"
                   class="slide-image"
                 />
@@ -115,9 +115,14 @@
               <div class="slide-about-me">
                 I am a self-taught Web Developer with a Physics degree from
                 Warwick University and a penchant for finding the best solution
-                to a problem. During my journey I discovered I greatly enjoyed
-                the tangible nature of Front End development which utilises both
-                my ability to solve problems and my creativity simultaneously.
+                to a problem. I am currently on a bootcamp with Futureproof
+                learning everything from testing to Docker, tools I wouldn't
+                have come across by myself.<br /><br />
+                During my journey I discovered I greatly enjoyed Fullstack
+                development which utilises my creativity ability and my love of
+                solving problems simultaneously. I enjoy creating responsive and
+                interactive websites that employ reusable and concise logic to
+                control data flow.
 
                 <br /><br />While not working I enjoy camping, hiking and,
                 although I lack any innate ability, I also love to snowboard. If
@@ -127,19 +132,25 @@
             </div>
             <div class="slide slide-2 flex">
               <div class="slide-about-me">
-                SCSS is my preferred preprocessor and I have a lot of experience
-                using JavaScript, with focus on ES6 methods. I am currently
-                studying React and currently building projects using it. I also
-                have some knowledge of Bootstrap, PHP and Python and can pick
-                them up quickly. Additionally, I am comfortable using Git
-                version control. All the code for my projects including this
-                website can be found on my
+                On the frontend, I am very comfortable creating apps using
+                JavaScript, and I am currently working on several React
+                projects. I am proficient with CSS animations and while SCSS is
+                my preferred preprocessor, I can also use Bootstrap.
+                <br /><br />
+                I have lots of experience using Node on the server side, and I
+                can create servers using Django and Express with both an SQL and
+                NoSQL(MongoDB) database.
+                <br /><br />
+                Additionally, I am comfortable using Git version control, while
+                working by myself or with a team. All the code for my projects
+                including this website can be found on my
                 <a href="https://github.com/Izgardon">GitHub.</a>
 
-                <br /><br />I am now looking to use and expand my skillset in
-                Front End frameworks in an engineer/developer role. Please see
-                my attached <a href="William Sessions CV.pdf">CV</a> to read
-                more.
+                <br /><br />I am now looking to use and expand my skillset in my
+                current as well as new languages in an engineer/developer role.
+                Please see my attached
+                <a target="”_blank”" href="William Sessions CV.pdf">CV</a> to
+                read more.
               </div>
               <div class="slide-image-container">
                 <img
@@ -150,16 +161,12 @@
               </div>
             </div>
           </div>
-          <button class="slider__btn slider__btn--left no-select">
-            &larr;
-          </button>
-          <button class="slider__btn slider__btn--right no-select">
-            &rarr;
-          </button>
+          <button class="slider__btn slider__btn--left no-select"><</button>
+          <button class="slider__btn slider__btn--right no-select">></button>
           <div class="dots no-select"></div>
         </section>
         <section class="projects" id="projects">
-          <h2>Projects</h2>
+          <h2>Javascript Projects</h2>
 
           <div class="project-grid">
             <div class="grid-text">
@@ -230,33 +237,37 @@
           </div>
         </section>
         <section class="websites" id="websites">
-          <h2>Websites</h2>
+          <h2>Fullstack Projects</h2>
           <div class="website-container flex">
             <article class="website-item">
               <img
                 src="../Images/website1.png"
-                onclick="location.href='./Websites/Netflix First Page/index.html'"
+                onclick="location.href='https://london-journal.netlify.app/'"
               />
               <div class="website-content">
-                <h3>Netflix Account Select Clone</h3>
+                <h3>London Journal</h3>
                 <p class="website-paragraph">
-                  This was my first project and I decided to create something
-                  simple while focusing on making it mobile friendly as well.
+                  Built using an Express server hosted on heroku, storing data
+                  in JSON files, so data persists until server refreshes.
+                  Primarily used Bootstrap for styling and ES6 JS for
+                  functionality. Users can create posts, comment and react to
+                  them, as well as search for a particular post.
                 </p>
               </div>
             </article>
             <article class="website-item">
               <img
                 src="../Images/website2.png"
-                onclick="location.href='./Websites/Nicola/index.html'"
+                onclick="location.href='https://momentum-habit-tracker.netlify.app/'"
               />
               <div class="website-content">
-                <h3>TTT Copywriting</h3>
+                <h3>Momentum - Habit Tracker</h3>
                 <p class="website-paragraph">
-                  This project was for a client who needed a website shell made.
-                  I designed and created it using HTML, SCSS and some
-                  JavaScritpt. It has 4 pages which taught me a lot about using
-                  helper classes and designs that are used throughout the site.
+                  Created a habit-tracker using Javascript and SASS. <br />
+                  Connected an Express server to a Mongo database using Mongoose
+                  to store user data and habit data. Users can create an account
+                  and their password gets hashed, salted and stored. Habits
+                  refresh at the end of each day but streak persists.
                 </p>
               </div>
             </article>

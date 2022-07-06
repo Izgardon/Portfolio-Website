@@ -75,14 +75,14 @@
 }
 
 /*------------Media Querys----------*/
-@media (min-width: 40rem) and (max-width: 51rem) {
+@media (min-width: 47rem) and (max-width: 51rem) {
   .nav-items {
     gap: 2rem;
     padding-right: 2rem;
   }
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 47rem) {
   .nav-items {
     position: fixed;
     inset: 0 0 0 0;
@@ -438,11 +438,16 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  aspect-ratio: 1;
   border-radius: 5rem 0 0 5rem;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .slide-image-2 {
   border-radius: 0 5rem 5rem 0;
+  margin-left: 1rem;
 }
 
 .slide-about-me {
@@ -458,31 +463,39 @@
 
 .slider__btn {
   position: absolute;
-  top: 40%;
+  top: 45%;
   z-index: 10;
   border: none;
-  background: transparent;
   font-family: inherit;
   color: #1b1b1b;
-  border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-  font-size: 3.25rem;
+  font-size: 2rem;
   cursor: pointer;
+}
+
+.slider__btn--left:hover {
+  -webkit-transform: scale(1.1) translate(-50%, -50%);
+          transform: scale(1.1) translate(-50%, -50%);
+}
+
+.slider__btn--right:hover {
+  -webkit-transform: scale(1.1) translate(50%, -50%);
+          transform: scale(1.1) translate(50%, -50%);
 }
 
 .slider__btn--left {
   left: 10%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .slider__btn--right {
   right: 10%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .dots {
@@ -614,6 +627,10 @@
   position: relative;
 }
 
+.grid-text p > a:hover {
+  color: white;
+}
+
 .left::after {
   content: "";
   position: absolute;
@@ -717,6 +734,7 @@
 .websites {
   color: #1b1b1b;
   margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 
 .website-container {
@@ -724,13 +742,16 @@
   width: 70%;
   max-width: 900px;
   margin: auto;
-  gap: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 4rem;
   position: relative;
 }
 
 .website-item {
-  background-color: rgba(27, 27, 27, 0.9);
-  height: 450px;
+  background-color: white;
+  height: 350px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -747,10 +768,10 @@
 }
 
 .website-item img {
-  position: absolute;
+  position: relative;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1.5;
   border-radius: 1rem;
 }
 
@@ -758,10 +779,8 @@
   position: relative;
   display: block;
   margin: 1rem;
-  top: 50%;
-  background: white;
   border-radius: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
 }
 
 .website-paragraph {
@@ -769,13 +788,13 @@
 }
 
 @media (min-width: 72rem) {
-  .website-item {
+  .website-item img {
     -webkit-transition: -webkit-transform 0.2s ease-out;
     transition: -webkit-transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   }
-  .website-item:hover {
+  .website-item img:hover {
     -webkit-transform: translateY(-2rem);
             transform: translateY(-2rem);
   }
@@ -793,12 +812,16 @@
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
-    width: 80%;
-    max-width: 30rem;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
+    aspect-ratio: 1.5;
+    max-width: 90vw;
     margin-bottom: 6rem;
+  }
+  .website-item img {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
   }
   .website-content {
     position: relative;
@@ -811,15 +834,7 @@
     background: white;
     border-radius: 1rem;
     padding: 0.5rem 0.5rem;
-  }
-}
-
-@media (max-width: 35rem) {
-  .website-content {
     overflow-y: scroll;
-  }
-  .website-item {
-    height: 350px;
   }
 }
 
@@ -959,6 +974,25 @@ h3 {
 
 .no-select:focus {
   outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
 
 /* .heading-container {
