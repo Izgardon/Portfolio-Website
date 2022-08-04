@@ -9,7 +9,7 @@
             $mailFrom = $_POST['email'];
             $message = $_POST['message'];
             $subject = "Web Dev Inquiry";
-            $mailTo = "williamsessions23@gmail.com";
+            $mailTo = "wsessions@hotmail.co.uk";
             $headers = "From: ".$mailFrom;
             $txt = "You have recieved an e-mail from  ".$name.".\n\n ".$message." from ".$mailFrom;
 
@@ -29,7 +29,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon shortcut" href="../icon.ico" type="icon.ico" />
+    <link rel="icon shortcut" href="../icon.png" type="icon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -131,6 +131,13 @@
               </div>
             </div>
             <div class="slide slide-2 flex">
+            <div class="slide-image-container">
+                <img
+                  src="../Images/me.jpg"
+                  alt="Picture of me"
+                  class="slide-image"
+                />
+              </div>
               <div class="slide-about-me">
                 On the frontend, I am very comfortable creating apps using
                 JavaScript, and I am currently working on several React
@@ -152,13 +159,7 @@
                 <a target="”_blank”" href="William Sessions CV.pdf">CV</a> to
                 read more.
               </div>
-              <div class="slide-image-container">
-                <img
-                  src="../Images/me.jpg"
-                  alt="Picture of me"
-                  class="slide-image slide-image-2"
-                />
-              </div>
+              
             </div>
           </div>
           <button class="slider__btn slider__btn--left no-select"><</button>
@@ -238,11 +239,12 @@
         </section>
         <section class="websites" id="websites">
           <h2>Fullstack Projects</h2>
-          <div class="website-container flex">
+          <div class="website-container">
             <article class="website-item">
               <img
                 src="../Images/website1.png"
                 onclick="location.href='https://london-journal.netlify.app/'"
+                alt="Image of project homepage"
               />
               <div class="website-content">
                 <h3>London Journal</h3>
@@ -259,6 +261,7 @@
               <img
                 src="../Images/website2.png"
                 onclick="location.href='https://momentum-habit-tracker.netlify.app/'"
+                alt="Image of project homepage"
               />
               <div class="website-content">
                 <h3>Momentum - Habit Tracker</h3>
@@ -271,39 +274,64 @@
                 </p>
               </div>
             </article>
-            <!-- <article class="website-item ">
-                            <div class="website-content ">
-                                <h3>Website 3
-                                </h3>
-                                <p class="website-paragraph "></p>
-                            </div>
-                        </article> -->
+            <article class="website-item">
+              <img
+                src="../Images/website3.png"
+                onclick="location.href='https://whatsmydoodlee.netlify.app/'"
+                alt="Image of project homepage"
+              />
+              <div class="website-content">
+                <h3>What's my Doodle?</h3>
+                <p class="website-paragraph">
+                  
+                </p>
+              </div>
+            </article>
+            <article class="website-item">
+              <img
+                src="../Images/website4.png"
+                onclick="location.href='https://read-herring.netlify.app/'"
+                alt="Image of project homepage"
+              />
+              <div class="website-content">
+                <h3>Read Herring</h3>
+                <p class="website-paragraph">
+                  
+                </p>
+              </div>
+            </article>
           </div>
         </section>
         <section class="contact-me" id="contact-me">
           <h2>Contact me</h2>
           <div class="contact-container">
             <h3>Get in Touch</h3>
-            <form class="contact-form" method="post ">
+            <form class="contact-form" method="post">
+              <label for="name"></label>
               <input
-                type="text "
-                name="name "
-                placeholder="Your Name "
+              id="name"
+                type="text"
+                name="name"
+                placeholder="Your Name"
                 required
               />
+              <label for="email"></label>
               <input
-                type="email "
-                name="email "
-                placeholder="Your Email "
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
                 required
               />
+              <label for="message"></label>
               <textarea
-                name="message "
-                rows="4 "
-                placeholder="How can I help you? "
+              id="message"
+                name="message"
+                rows="4"
+                placeholder="How can I help you?"
                 style="resize: none"
               ></textarea>
-              <button type="submit " name="submit ">Send</button>
+              <button type="submit" name="submit" onclick="event.preventDefault()">Send</button>
             </form>
           </div>
         </section>

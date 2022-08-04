@@ -2,29 +2,32 @@
 .websites {
   color: $primary-solid;
   margin-top: 4rem;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 .website-container {
   padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   width: 70%;
-  max-width: 900px;
-  margin: auto;
-  height: fit-content;
-  gap: 4rem;
+  max-width: 1000px;
+  margin-inline: auto;
   position: relative;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .website-item {
   background-color: white;
   height: 350px;
-
-  flex: 1;
+  width: 100%;
   border-radius: 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  margin-bottom: 8rem;
 }
 
 .website-item img {
@@ -60,17 +63,11 @@
 }
 
 @media (max-width: 72rem) {
-  .website-container {
-    flex-direction: column;
-    margin-bottom: 0;
-  }
   .website-item {
-    flex: auto;
-
     aspect-ratio: 1.5;
     max-width: 90vw;
 
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
   .website-item img {
     position: absolute;
